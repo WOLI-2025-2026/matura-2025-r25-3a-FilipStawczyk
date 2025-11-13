@@ -9,5 +9,5 @@ for linia in linijki:
     if linia == linia[::-1]:
         palindromy.append(linia)
 
-for p in palindromy:
-    print(p)
+with open("wynik2_1.txt", "w") as plik:
+    plik.writelines("\n".join(palindromy) + "\n")

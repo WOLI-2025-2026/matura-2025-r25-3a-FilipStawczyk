@@ -17,4 +17,6 @@ for index_w, wiersz in enumerate(linijki[1:-1], start=1):
         if all(x == pozycja for x in pozostałe):
             liczba_kwadratów+= 1
             koordynaty+= [index_w+1, index_p+1]
-print(str(liczba_kwadratów), " ".join(map(str, koordynaty)))
+exit = str(liczba_kwadratów) + " " + " ".join(map(str, koordynaty))
+with open("wynik2_2.txt", "w") as plik:
+    plik.writelines(exit)
