@@ -24,4 +24,4 @@ for linia in linijki:
 
 najwiekszy_klucz = max(dziennik, key=dziennik.get)
 with open("wynik2_3.txt", "w") as plik:
-    plik.writelines(str((konwersja(dziennik[najwiekszy_klucz]))) + " " + najwiekszy_klucz)
+    plik.writelines(str((konwersja(dziennik[najwiekszy_klucz]))) + " " + najwiekszy_klucz + "\n")
