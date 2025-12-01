@@ -21,5 +21,5 @@ for a, b in combinations(punkty, 2):
     sprawdzany = [min(a[0], b[0])+sprawdzany_p[0], min(a[1], b[1])+sprawdzany_p[1]]
     if sprawdzany in punkty:
         wynik = f"({min(a[0], b[0])}, {min(a[1], b[1])}), ({int(sprawdzany[0])}, {int(sprawdzany[1])}), ({max(a[0], b[0])}, {max(a[1], b[1])})"
-        with open("wynik3_2_b", "w") as plik:
+        with open("wynik3_2_b.txt", "w") as plik:
             plik.writelines(wynik)
